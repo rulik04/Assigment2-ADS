@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class MyArrayList<T> implements MyList<T> {
     private Object[] array;
     private int capacity = 5;
@@ -130,5 +132,10 @@ public class MyArrayList<T> implements MyList<T> {
     @Override
     public boolean contains(Object o) {
         return indexOf(o) >= 0;
+    }
+
+    @Override
+    public void sort(){
+        Arrays.sort(array, 0, size);
     }
 }

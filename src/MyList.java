@@ -10,4 +10,5 @@ public interface MyList<T> {
     int indexOf(Object o);
     int lastIndexOf(Object o);
     boolean contains(Object o);
+    void sort();
 }

@@ -151,6 +151,10 @@ public class MyLinkedList<T> implements MyList<T> {
         return last;
     }
 
+    @Override
+    public void sort() {
+
+    }
 
     private static class MyNode<E> {
         E data;
